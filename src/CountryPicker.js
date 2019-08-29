@@ -109,6 +109,7 @@ export default class CountryPicker extends Component {
   static renderImageFlag(cca2, imageStyle) {
     return cca2 !== '' ? (
       <Image
+        resizeMode={'contain'}
         style={[countryPickerStyles.imgStyle, imageStyle]}
         source={{ uri: countries[cca2].flag }}
       />
